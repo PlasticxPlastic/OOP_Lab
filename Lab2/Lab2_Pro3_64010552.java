@@ -29,7 +29,7 @@ public class Lab2_Pro3_64010552 {
         //check month 31 day
         if((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && (q <=0 || q > 31))
         {
-            System.out.print("day is invalid please check again");
+            System.out.print("day is invalid plese check again"); 
             System.exit(0);
         }
         //check month 30 day
@@ -91,7 +91,7 @@ public class Lab2_Pro3_64010552 {
     int k = y%100;
     int h = (q + (int)((26 * (m + 1)) / 10) + k + (int)(k / 4) + (int)(j / 4) + (5 * j)) % 7;
 
-        //Printout
-        System.out.println(day[h]); 
+    //Printout
+    System.out.println(day[h]); 
     }
 }
