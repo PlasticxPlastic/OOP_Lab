@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Account {
     private int id;
-    private double balance;
+    protected double balance;
     private double annualInterestRate;
     private final Date dateCreated;
 
@@ -38,13 +38,7 @@ public class Account {
     }
 
     public void setBalance(double balance) {
-        if(balance >= 0)
-            this.balance = balance;
-        else{
-            System.out.println("Balance should more than or equal to 0");
-            System.exit(1);
-        }
-
+        this.balance = balance;
     }
 
     public double getAnnualInterestRate() {
@@ -69,7 +63,6 @@ public class Account {
         else{
             System.out.println("Your balance is not enough");
         }
-
     }
 
     public void deposit(double amount) {
@@ -86,5 +79,8 @@ public class Account {
         else{
             System.out.println("Interest should more than or equal to 0%");
         }
+    }
+    public String toString(){
+        return "This account was created at " + getDateCreated();
     }
 }
