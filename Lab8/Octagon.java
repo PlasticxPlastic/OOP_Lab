@@ -33,7 +33,7 @@ public class Octagon extends  GeometricObject implements Comparable<Octagon> , C
         else if(diffArea == 0)
             return 0;
         else
-            return 1;
+            return -1;
     }
 
     @Override

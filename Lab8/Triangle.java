@@ -56,6 +56,15 @@ public class Triangle extends GeometricObject{
                 this.side1 + this.side3 > this.side2 &&
                 this.side2 + this.side3 > this.side1;
     }
+    @Override
+    public String toString(){
+        if(isTriangle())
+            return "created on" + getDateCreated() + "\ncolor " + getColor() + " and filled " + isFilled() +
+                "\nArea is " + getArea() + "\nPerimeter is " + getPerimeter();
+        else
+            return "Side is invalid";
+    }
+
 
     @Override
     public double getArea() {

@@ -13,7 +13,7 @@ public class Lab8_Pro2_64010552 {
         for(int i = 0; i < square.length; i++){
             System.out.println("Square " + (i+1));
             System.out.println(square[i].toString());
-            ((Square)square[i]).howTocolor();
+            ((Square)square[i]).howToColor();
             System.out.println();
         }
     }

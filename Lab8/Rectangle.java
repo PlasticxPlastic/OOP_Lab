@@ -13,12 +13,6 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle>{
         setWidth(width);
     }
 
-    Rectangle(String color, Boolean filled, double width, double height){
-        super(color,filled);
-        setHeight(height);
-        setWidth(width);
-    }
-
     public double getWidth() {
         return width;
     }
@@ -45,7 +39,7 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle>{
         else if(diffArea == 0)
             return 0;
         else
-            return 1;
+            return -1;
     }
 
     @Override

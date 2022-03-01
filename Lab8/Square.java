@@ -39,7 +39,7 @@ public class Square extends GeometricObject implements Colorable{
     }
 
     @Override
-    public void howTocolor() {
+    public void howToColor() {
         if(isSquare())
             System.out.println("Color is " + this.getColor());
     }

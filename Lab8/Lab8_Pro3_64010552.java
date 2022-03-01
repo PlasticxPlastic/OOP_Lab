@@ -5,10 +5,13 @@ public class Lab8_Pro3_64010552 {
         GeometricObject rectangle1 = new Rectangle(7,2);
         GeometricObject rectangle2 = new Rectangle(14,1);
         GeometricObject rectangle3 = new Rectangle(5,2);
+        System.out.println("Rectangle1");
         System.out.println(rectangle1.toString());
         System.out.println();
+        System.out.println("Rectangle2");
         System.out.println(rectangle2.toString());
         System.out.println();
+        System.out.println("Rectangle3");
         System.out.println(rectangle3.toString());
         System.out.println();
 

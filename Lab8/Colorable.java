@@ -1,5 +1,5 @@
 package Lab8;
 
 public interface Colorable {
-    public abstract void howTocolor();
+    public abstract void howToColor();
 }
